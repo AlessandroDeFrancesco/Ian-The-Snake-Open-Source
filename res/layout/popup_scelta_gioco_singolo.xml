@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cornice_bianca"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp" >
+    
+    <Button
+        android:id="@+id/buttonSingolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/riquadro_rosso"
+        android:text="@string/singolo" />
+
+    <Button
+        android:id="@+id/buttonVsCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/riquadro_giallo"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/vs_cpu" />
+    
+</LinearLayout>

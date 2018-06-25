@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ian The Snake</string>
+    <string name="intro_per_google_play">Devi collegarti a google play per vedere la classifica online e per sbloccare gli achievements</string>
+    <string name="intro_no_google_play">Mi colleghero\'\npiu\' tardi</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu">Menu\'</string>
+    <string name="opzioni">Opzioni</string>
+    <string name="punteggio">"Punteggio: "</string>
+    <string name="tempo_gioco">"Tempo: "</string>
+    <string name="gioca">Gioca</string>
+    <string name="vs_cpu">Vs Cpu</string>
+    <string name="singolo">Normale</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="labirinti">Labirinti</string>
+    <string name="velocita">Velocita\'</string>
+    <string name="suono">Suono</string>
+    <string name="numero_cpu">Numero cpu</string>
+    <string name="numero_cpu1">1 cpu</string>
+    <string name="numero_cpu2">2 cpu</string>
+    <string name="numero_cpu3">3 cpu</string>
+    <string name="joystick">Joystick</string>
+    <string name="joystick_orario_antiorario">Orario\n/Antiorario</string>
+    <string name="joystick_quattro_frecce">Quattro\nFrecce</string>
+    <string name="modalitamultiplayer">Modalita\' Multiplayer</string>
+	<string name="wifi">Wifi</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="stato_gioco_perso_vittoria">Hai vinto!</string>
+	<string name="stato_gioco_perso_perdita">Hai perso&#8230;</string>
+	<string name="stato_gioco_perso_pareggio">Pareggio!</string>
+	<string name="stato_gioco_perso_punteggio_cpu">Punteggio CPU </string>
+    <string name="stato_gioco_perso_pref">"Punteggio: "</string>
+    <string name="stato_gioco_perso_suff">"\nRecord: "</string>
+    <string name="stato_gioco_pausa">"Tocca per \ncontinuare"</string>
+    <string name="stato_gioco_pronto">"Tocca per \niniziare"</string>
+    <string name="stato_gioco_attesa_server">"In attesa che il \nserver inizi il gioco"</string>
+    <string name="client">"Client"</string>
+    <string name="server">"Server"</string>
+    <string name="multiplayer_info">
+        ATTENZIONE: devi consentire l\'accesso alla posizione per poter vedere gli altri dispositivi(per i dispositivi con Android Marshmallow o superiore)
+        \nIstruzioni:
+        \n1) Un solo giocatore deve scegliere la voce "Server": il compito del server è di "ospitare" il gioco e i partecipanti sul suo dispositivo.
+        \n2) Gli altri giocatori devono scegliere la voce "Client", quindi una volta trovato il nome bluetooth del dispositivo che fa da Server, devono toccarlo per entrare come partecipanti al gioco.
+        </string>
+    <string name="multiplayer_bluetooth_no_supp">Bluetooth non supportato dal dispositivo in uso</string>
+    <string name="multiplayer_wifi_errore_generale">Errore generale col wifi direct</string>
+    <string name="multiplayer_client_attesa">Sto cercando&#8230;</string>
+    <string name="multiplayer_client_fine_ricerca">Fine ricerca</string>
+    <string name="multiplayer_client_err_ricerca">Errore nella ricerca dei dispositivi, provare a riattivare il bluetooth/wifi</string>
+    <string name="multiplayer_client_connessione">Mi sto connettendo</string>
+    <string name="multiplayer_client_err_connessione">Connessione non riuscita</string>
+    <string name="multiplayer_client_server_disconnesso">Il server si è disconnesso</string>
+    <string name="multiplayer_client_ricerca">Cerca</string>
+    <string name="multiplayer_server_attesa">In attesa dei Client&#8230;</string>
+    <string name="multiplayer_server_chiusura_server">Chiusura del server</string>
+    <string name="multiplayer_server_client_disconnesso">Un client si è disconnesso</string>
+    <string name="multiplayer_server_trovato_client">Trovato Client&#8230;</string>
+    <string name="multiplayer_server_nessun_client_connesso">Nessun client connesso</string>
+    <string name="multiplayer_client_impostazioni_info">Scegli il colore dello snake.\nN.B. per poterti riconoscere\nsceglilo diverso dagli altri!</string>
+    <string name="multiplayer_server_impostazioni_info">Scegli la velocita\' e\nil colore dello snake.\nN.B. per poterti riconoscere\nsceglilo diverso dagli altri!</string>
+    <string name="info_titolo_autore">Autore</string>
+    <string name="info_autore">Alessandro De Francesco</string>
+    <string name="info_rating_descrizione">Se ti e\' piaciuta l\'applicazione \nvotala sullo store!</string>
+    <string name="info_rating_bottone">Premi qui</string>
+    <string name="titolo_colore_snake">Colore</string>
+    <string name="inizia">Inizia</string>
+    <string name="classifica">Classifica</string>
+    <string name="classifica_cpu">Classifica vs Cpu</string>
+    <string name="nessuna_connessione_google_play">Errore!\nConnetiti a GooglePlay</string>
+    
+</resources>

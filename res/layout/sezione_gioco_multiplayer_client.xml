@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:columnCount="1"
+    android:keepScreenOn="true" >
+
+    <TextView
+        android:id="@+id/testoPunteggioMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/punteggio"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/testoTempoGiocoMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/tempo_gioco"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonGiuMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/freccia_giu" />
+
+    <Button
+        android:id="@+id/buttonSuMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGiuMulti"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/freccia_su" />
+
+    <Button
+        android:id="@+id/buttonDestraMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonSuMulti"
+        android:layout_toRightOf="@+id/buttonGiuMulti"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/freccia_destra" />
+
+    <Button
+        android:id="@+id/buttonSinistraMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonSuMulti"
+        android:layout_toLeftOf="@+id/buttonGiuMulti"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/freccia_sinistra" />
+
+    <com.ianthesnake.MultiplayerClientGameView
+        android:id="@+id/multiplayerGameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSuMulti"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/testoPunteggioMulti" />
+
+    <TextView
+        android:id="@+id/DisplayMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/multiplayerGameView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/riquadro_bianco_grande"
+        android:gravity="center"
+        android:text="@string/stato_gioco_pronto"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/grandezza_testo2" />
+
+    <Button
+        android:id="@+id/buttonAntiorarioMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/antiorario"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonOrarioMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/orario"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/wallpaper" >
+
+    <Button
+        android:id="@+id/buttonCollegatiDopoIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/riquadro_grigio"
+        android:text="@string/intro_no_google_play" />
+	
+	<!-- sign-out button -->
+	<Button
+	    android:id="@+id/sign_out_button_intro"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="Sign Out" 
+	    android:visibility="gone" />
+
+	<!-- sign-in button -->
+	<com.google.android.gms.common.SignInButton
+	    android:id="@+id/sign_in_button_intro"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true" >
+	</com.google.android.gms.common.SignInButton>
+
+	<TextView
+	    android:id="@+id/textViewIntroPerGooglePlay"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/sign_in_button_intro"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/cornice_blu"
+	    android:gravity="center"
+	    android:text="@string/intro_per_google_play"
+	    android:textSize="@dimen/grandezza_testo2" />
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/wallpaper" >
+
+	<Button
+	    android:id="@+id/buttonOpzioniOk"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/riquadro_verde"
+	    android:text="@string/ok" />
+
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/buttonOpzioniOk"
+	    android:layout_alignParentTop="true"
+	    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:columnCount="2"
+	        android:paddingBottom="@dimen/activity_vertical_margin"
+	        android:paddingLeft="@dimen/activity_horizontal_margin"
+	        android:paddingRight="@dimen/activity_horizontal_margin"
+	        android:paddingTop="@dimen/activity_vertical_margin" >
+
+	        <SeekBar
+	            android:id="@+id/seekBarVelocita"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/textViewVelocita"
+	            android:layout_centerHorizontal="true"
+	            android:max="@integer/massima_velocita" />
+
+	        <TextView
+	            android:id="@+id/textViewTitoloVelocita"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/cornice_gialla"
+	            android:gravity="center"
+	            android:text="@string/velocita"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo2" />
+
+	        <View
+	            android:id="@+id/barra1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_below="@+id/seekBarVelocita"
+	            android:background="@android:color/darker_gray" />
+
+	        <TextView
+	            android:id="@+id/textViewVelocita"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/textViewTitoloVelocita"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="14dp"
+	            android:text="2"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo2" />
+
+	        <TextView
+	            android:id="@+id/textViewTitoloColore"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/barra1"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="13dp"
+	            android:background="@drawable/cornice_arancione"
+	            android:gravity="center"
+	            android:text="@string/titolo_colore_snake"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo2" />
+
+	        <View
+	            android:id="@+id/barra2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_below="@+id/buttonSinistraDispari"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="12dp"
+	            android:background="@android:color/darker_gray" />
+
+	        <ImageView
+	            android:id="@+id/imageViewCorpoPari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/buttonSinistraPari"
+	            android:layout_alignLeft="@+id/textViewTitoloColore"
+	            android:layout_alignRight="@+id/textViewTitoloColore"
+	            android:layout_alignTop="@+id/buttonSinistraPari"
+	            android:padding="10dp"
+	            android:src="@drawable/corpo_verde_chiaro" />
+
+	        <ImageView
+	            android:id="@+id/imageViewCorpoDispari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_above="@+id/barra2"
+	            android:layout_alignLeft="@+id/imageViewCorpoPari"
+	            android:layout_alignRight="@+id/imageViewCorpoPari"
+	            android:layout_alignTop="@+id/buttonSinistraDispari"
+	            android:padding="10dp"
+	            android:src="@drawable/corpo_verde_scuro" />
+
+	        <Button
+	            android:id="@+id/buttonDestraPari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textViewTitoloColore"
+	            android:layout_marginTop="8dp"
+	            android:background="@drawable/freccia_destra" />
+
+	        <Button
+	            android:id="@+id/buttonDestraDispari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/buttonDestraPari"
+	            android:background="@drawable/freccia_destra" />
+
+	        <Button
+	            android:id="@+id/buttonSinistraDispari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/buttonSinistraPari"
+	            android:background="@drawable/freccia_sinistra" />
+
+	        <Button
+	            android:id="@+id/buttonSinistraPari"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/buttonDestraPari"
+	            android:layout_alignBottom="@+id/buttonDestraPari"
+	            android:layout_alignParentLeft="true"
+	            android:background="@drawable/freccia_sinistra" />
+	        
+	        <TextView
+	            android:id="@+id/textViewTitoloSuono"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/barra2"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="13dp"
+	            android:background="@drawable/cornice_lilla"
+	            android:gravity="center"
+	            android:text="@string/suono"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo2" />
+	        
+	        <ToggleButton 
+	            android:id="@+id/toggleButtonSuono"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/textViewTitoloSuono"
+	            android:layout_centerHorizontal="true"
+	            android:paddingLeft="10dp"
+      			android:paddingRight="15dp"
+	            android:layout_marginTop="13dp"
+	            android:background="@drawable/toggle_button" />
+	        
+	        <View
+	            android:id="@+id/barra3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_below="@+id/toggleButtonSuono"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="12dp"
+	            android:background="@android:color/darker_gray" />
+	        
+	        <TextView
+	            android:id="@+id/textViewTitoloJoystick"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/barra3"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="13dp"
+	            android:background="@drawable/cornice_blu"
+	            android:gravity="center"
+	            android:text="@string/joystick"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo2" />
+	        
+	        <Button
+	            android:id="@+id/buttonDestraJoystick"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="10dp"
+	            android:layout_below="@+id/textViewTitoloJoystick"
+	            android:background="@drawable/freccia_destra" />
+
+	        <Button
+	            android:id="@+id/buttonSinistraJoystick"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginTop="10dp"
+	            android:layout_below="@+id/textViewTitoloJoystick"
+	            android:background="@drawable/freccia_sinistra" />
+
+	        <TextView
+	            android:id="@+id/textViewSceltaJoystick"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/textViewTitoloJoystick"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="35dp"
+	            android:background="@drawable/cornice_bianca"
+	            android:gravity="center"
+	            android:text="@string/joystick_quattro_frecce"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="@dimen/grandezza_testo3" />
+	        
+	    </RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

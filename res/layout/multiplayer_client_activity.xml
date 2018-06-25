@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/listViewDispositiviBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewClientAttesa"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding_list_view" >
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBarClient"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewClientAttesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBarClient"
+        android:layout_centerHorizontal="true"
+        android:text="@string/multiplayer_client_attesa"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonClientRicerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBarClient"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/riquadro_giallo"
+        android:text="@string/multiplayer_client_ricerca" />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="1dp"
+    android:background="@drawable/wallpaper" >
+
+    <TextView
+        android:id="@+id/textViewMultiplayerImpostazioniInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cornice_bianca_info"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/multiplayer_server_impostazioni_info"
+        android:textSize="@dimen/grandezza_testo3" />
+    
+    <TextView
+        android:id="@+id/textViewTitoloMultiplayerImpostazioniColore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMultiplayerImpostazioniInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/cornice_arancione"
+        android:gravity="center"
+        android:text="@string/titolo_colore_snake"
+        android:textSize="@dimen/grandezza_testo2" />
+
+    <Button
+        android:id="@+id/buttonMultiplayerImpostazioniSinistraDispari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonMultiplayerImpostazioniSinistraPari"
+        android:background="@drawable/freccia_sinistra" />
+
+    <Button
+        android:id="@+id/buttonMultiplayerImpostazioniDestraPari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonMultiplayerImpostazioniSinistraPari"
+        android:layout_alignBottom="@+id/buttonMultiplayerImpostazioniSinistraPari"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/freccia_destra" />
+
+    <Button
+        android:id="@+id/buttonMultiplayerImpostazioniDestraDispari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonMultiplayerImpostazioniDestraPari"
+        android:background="@drawable/freccia_destra" />
+
+    <ImageView
+        android:id="@+id/imageViewMultiplayerImpostazioniCorpoPari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMultiplayerImpostazioniDestraPari"
+        android:layout_alignLeft="@+id/textViewTitoloMultiplayerImpostazioniColore"
+        android:layout_alignRight="@+id/textViewTitoloMultiplayerImpostazioniColore"
+        android:layout_alignTop="@+id/buttonMultiplayerImpostazioniDestraPari"
+        android:padding="10dp"
+        android:src="@drawable/corpo_verde_chiaro"
+        android:contentDescription="colore_corpo_pari"/>
+
+    <ImageView
+        android:id="@+id/imageViewMultiplayerImpostazioniCorpoDispari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMultiplayerImpostazioniSinistraDispari"
+        android:layout_alignLeft="@+id/imageViewMultiplayerImpostazioniCorpoPari"
+        android:layout_alignRight="@+id/imageViewMultiplayerImpostazioniCorpoPari"
+        android:layout_alignTop="@+id/buttonMultiplayerImpostazioniDestraDispari"
+        android:padding="10dp"
+        android:src="@drawable/corpo_verde_scuro"
+        android:contentDescription="colore_corpo_pari" />
+
+    <Button
+        android:id="@+id/buttonMultiplayerImpostazioniSinistraPari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewTitoloMultiplayerImpostazioniColore"
+        android:background="@drawable/freccia_sinistra" />
+
+        <View
+            android:id="@+id/barraMultiplayerImpostazioni1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/imageViewMultiplayerImpostazioniCorpoDispari"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textViewTitoloMultiplayerImpostazioniVelocita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barraMultiplayerImpostazioni1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cornice_gialla"
+            android:gravity="center"
+            android:text="@string/velocita"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/grandezza_testo2" />
+
+        <TextView
+            android:id="@+id/textViewMultiplayerImpostazioniVelocita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitoloMultiplayerImpostazioniVelocita"
+            android:layout_centerHorizontal="true"
+            android:text="2"
+            android:textSize="@dimen/grandezza_testo2" />
+
+        <Button
+            android:id="@+id/buttonMultiplayerImpostazioniOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/riquadro_verde"
+            android:gravity="center"
+            android:text="@string/ok" />
+
+        <SeekBar
+            android:id="@+id/seekBarMultiplayerImpostazioniVelocita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/barraMultiplayerImpostazioni1"
+            android:layout_below="@+id/textViewMultiplayerImpostazioniVelocita"
+            android:max="@integer/massima_velocita" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cornice_bianca"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp" >
+
+    <TextView
+        android:id="@+id/textViewNumeroCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cornice_blu"
+        android:gravity="center"
+        android:text="@string/numero_cpu"
+        android:textSize="@dimen/grandezza_testo2" />
+    
+    <Button
+        android:id="@+id/buttonUnaCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/riquadro_verde"
+        android:text="@string/numero_cpu1" />
+
+    <Button
+        android:id="@+id/buttonDueCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/riquadro_giallo"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/numero_cpu2" />
+    
+        <Button
+        android:id="@+id/buttonTreCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/riquadro_rosso"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/numero_cpu3" />
+    
+</LinearLayout>

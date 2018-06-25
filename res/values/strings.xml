@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">973438711068</string>
+    <string name="LEADERBOARD_ID">CgkInOrfq6ocEAIQAA</string>
+    <string name="LEADERBOARD_CPU_ID">CgkInOrfq6ocEAIQHA</string>
+    <string name="id_achievement_100punti">CgkInOrfq6ocEAIQAg</string>
+    <string name="id_achievement_500punti">CgkInOrfq6ocEAIQAw</string>
+    <string name="id_achievement_1000punti">CgkInOrfq6ocEAIQBA</string>
+    <string name="id_achievement_2000punti">CgkInOrfq6ocEAIQBQ</string>
+    <string name="id_achievement_3000punti">CgkInOrfq6ocEAIQBg</string>
+    <string name="id_achievement_10cibi">CgkInOrfq6ocEAIQBw</string>
+    <string name="id_achievement_50cibi">CgkInOrfq6ocEAIQCA</string>
+    <string name="id_achievement_100cibi">CgkInOrfq6ocEAIQCQ</string>
+    <string name="id_achievement_250cibi">CgkInOrfq6ocEAIQCg</string>
+    <string name="id_achievement_500cibi">CgkInOrfq6ocEAIQCw</string>
+    <string name="id_achievement_1000cibi">CgkInOrfq6ocEAIQDA</string>
+    <string name="id_achievement_5000cibi">CgkInOrfq6ocEAIQDQ</string>
+    <string name="id_achievement_10morti">CgkInOrfq6ocEAIQDg</string>
+	<string name="id_achievement_25morti">CgkInOrfq6ocEAIQDw</string>
+	<string name="id_achievement_100morti">CgkInOrfq6ocEAIQEA</string>
+	<string name="id_achievement_1quasimorto">CgkInOrfq6ocEAIQEQ</string>
+ 	<string name="id_achievement_20quasimorto">CgkInOrfq6ocEAIQEg</string>
+ 	<string name="id_achievement_100quasimorto">CgkInOrfq6ocEAIQEw</string>
+ 	<string name="id_achievement_1cibospeciale">CgkInOrfq6ocEAIQFA</string>
+	<string name="id_achievement_7cibospeciale">CgkInOrfq6ocEAIQFQ</string>
+	<string name="id_achievement_15cibospeciale">CgkInOrfq6ocEAIQFg</string>
+	<string name="id_achievement_multiplayer">CgkInOrfq6ocEAIQFw</string>
+	<string name="id_achievement_sopravvivenza1">CgkInOrfq6ocEAIQGQ</string>
+    <string name="id_achievement_sopravvivenza2">CgkInOrfq6ocEAIQGg</string>
+    <string name="id_achievement_sopravvivenza3">CgkInOrfq6ocEAIQGw</string>
+	<string name="id_achievement_sopravvivenza4">CgkInOrfq6ocEAIQGA</string>
+	<string name="id_achievement_vittoria_cpu1">CgkInOrfq6ocEAIQHQ</string>
+  	<string name="id_achievement_vittoria_cpu2">CgkInOrfq6ocEAIQHg</string>
+ 	<string name="id_achievement_vittoria_cpu3">CgkInOrfq6ocEAIQHw</string>
+	<string name="leaderboard_highscores">CgkInOrfq6ocEAIQAA</string>
+    
+    <string name="app_name">Ian The Snake</string>
+    <string name="intro_per_google_play">You must connect to google play to see the online leaderboard and to unlock achievements</string>
+    <string name="intro_no_google_play">I\'ll connect\nlater</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu">Menu\'</string>
+    <string name="opzioni">Options</string>
+    <string name="punteggio">"Score: "</string>
+    <string name="tempo_gioco">"Time: "</string>
+    <string name="gioca">Play</string>
+    <string name="vs_cpu">Vs Cpu</string>
+    <string name="singolo">Normal</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="labirinti">Mazes</string>
+    <string name="velocita">Speed</string>
+    <string name="suono">Sound</string>
+    <string name="numero_cpu">Cpu number</string>
+    <string name="numero_cpu1">1 cpu</string>
+    <string name="numero_cpu2">2 cpu</string>
+    <string name="numero_cpu3">3 cpu</string>
+    <string name="joystick">Joystick</string>
+    <string name="joystick_orario_antiorario">Clockwise\n/Anticlockwise</string>
+    <string name="joystick_quattro_frecce">Four\nArrows</string>
+    <string name="modalitamultiplayer">Multiplayer Mode</string>
+    <string name="wifi">Wifi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="stato_gioco_perso_vittoria">You won!</string>
+	<string name="stato_gioco_perso_perdita">You lose&#8230;</string>
+	<string name="stato_gioco_perso_pareggio">It\'s a tie!</string>
+	<string name="stato_gioco_perso_punteggio_cpu">Score CPU </string>
+    <string name="stato_gioco_perso_pref">"Score: "</string>
+    <string name="stato_gioco_perso_suff">"\nRecord: "</string>
+    <string name="stato_gioco_pausa">"Touch to \ncontinue"</string>
+    <string name="stato_gioco_pronto">"Touch to \nstart"</string>
+    <string name="stato_gioco_attesa_server">"Waiting that the \nserver starts the game"</string>
+    <string name="client">"Client"</string>
+    <string name="server">"Server"</string>
+   <string name="multiplayer_info">
+       WARNING: you need to grant access to the position to find the other devices(for the devices with Android Marshmallow or higher)
+       \nInstructions:
+       \n1) Only one player has to choose the "Server" option: the Server task is to "accommodate" the game and the partecipants on his device.
+       \n2) The other players have to choose the "Client" option, so once they\'ve found the bluetooth name of the device that is the Server, they have to touch it to enter the game.
+        </string>
+    <string name="multiplayer_bluetooth_no_supp">Bluetooth not supported</string>
+    <string name="multiplayer_wifi_errore_generale">Error with the wifi direct</string>
+    <string name="multiplayer_client_attesa">Searching&#8230;</string>
+    <string name="multiplayer_client_fine_ricerca">End of search</string>
+    <string name="multiplayer_client_err_ricerca">Error in the searching of other devices, try to activate again the bluetooth/wifi</string>
+    <string name="multiplayer_client_connessione">Connecting</string>
+    <string name="multiplayer_client_err_connessione">Connection not successful</string>
+    <string name="multiplayer_client_server_disconnesso">The server has disconnected</string>
+    <string name="multiplayer_client_ricerca">Search</string>
+    <string name="multiplayer_server_attesa">Waiting for clients&#8230;</string>
+    <string name="multiplayer_server_chiusura_server">Closing the server</string>
+    <string name="multiplayer_server_client_disconnesso">A Client has disconnected</string>
+    <string name="multiplayer_server_trovato_client">Client found&#8230;</string>
+    <string name="multiplayer_server_nessun_client_connesso">No clients connected</string>
+    <string name="multiplayer_client_impostazioni_info">Choose your snake color.\nN.B. choose it different\nfrom the others!</string>
+    <string name="multiplayer_server_impostazioni_info">Choose the speed and\n your snake color.\nN.B. choose it different\nfrom the others!</string>
+    <string name="info_titolo_autore">Author</string>
+    <string name="info_autore">Alessandro De Francesco</string>
+    <string name="info_rating_descrizione">If you liked this application \nrate it on the store!</string>
+    <string name="info_rating_bottone">Press here</string>
+    <string name="titolo_colore_snake">Color</string>
+    <string name="inizia">Start</string>
+    <string name="ok">OK</string>
+    <string name="classifica">Leaderboard</string>
+    <string name="classifica_cpu">Leaderboard vs Cpu</string>
+    <string name="nessuna_connessione_google_play">Error!\nConnect to GooglePlay</string>
+    <string name="achievements">Achievements</string>
+
+</resources>

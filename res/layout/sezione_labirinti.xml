@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/buttonLabirintiOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/riquadro_verde"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/buttonDestraLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLabirintiOk"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/freccia_destra" />
+
+    <Button
+        android:id="@+id/buttonSinistraLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLabirintiOk"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/freccia_sinistra" />
+
+    <com.ianthesnake.MazeView
+        android:id="@+id/maze"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_above="@+id/buttonDestraLab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:columnCount="1"
+    android:keepScreenOn="true" >
+
+    <TextView
+        android:id="@+id/testoPunteggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/punteggio"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/testoTempoGioco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="@string/tempo_gioco"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.ianthesnake.GameView
+        android:id="@+id/snake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/testoPunteggio" />
+
+    <Button
+        android:id="@+id/buttonGiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/freccia_giu" />
+
+    <Button
+        android:id="@+id/buttonSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGiu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/freccia_su" />
+
+    <Button
+        android:id="@+id/buttonDestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonSu"
+        android:layout_toRightOf="@+id/buttonGiu"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/freccia_destra" />
+
+    <Button
+        android:id="@+id/buttonSinistra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/buttonSu"
+        android:layout_toLeftOf="@+id/buttonGiu"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/freccia_sinistra" />
+
+    <TextView
+        android:id="@+id/Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/snake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/riquadro_bianco_grande"
+        android:gravity="center"
+        android:text="@string/stato_gioco_pronto"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/grandezza_testo2" />
+
+    <Button
+        android:id="@+id/buttonOrario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/snake"
+        android:layout_toRightOf="@+id/buttonGiu"
+        android:background="@drawable/orario"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonAntiorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/snake"
+        android:layout_toLeftOf="@+id/buttonGiu"
+        android:background="@drawable/antiorario"
+        android:visibility="invisible" />
+
+</RelativeLayout>
